@@ -13,9 +13,6 @@ app.use(cors());
 app.use(Express.json());
 app.use('/api', router);
 
-app.use('/', (req, res) => {
-	res.status(200).json({ "task": "Убивать!" });
-});
 
 app.use(errorHandler);
 
